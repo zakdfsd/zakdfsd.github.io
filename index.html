@@ -3,11 +3,85 @@
     <head>
         <title>Zak's Amazing Website</title>
         </head>
+        body {
+            background: rgb(125, 198, 205);
+            color: rgb(45, 45, 45);
+            padding: 10px;
+            font-family: arial;
+        }
+        #all-contents {
+            max-width: 800px;
+            margin: auto;
+        }
+    
+        /* navigation menu */
+        nav {
+            background: rgb(239, 80, 41);
+            margin: 0 auto;
+            margin-bottom: 20px;
+            display: flex;
+            padding: 10px;
+        }
+        h1 {
+            display: flex;
+            align-items: center;
+            color: white;
+            flex: 1;
+            margin: 0;
+        }
+        #nav-ul {
+            list-style-image: none;
+        }
+        .nav-li {
+            display: inline-block;
+            padding: 0 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+    
+        /* main container area beneath menu */
+        main {
+            background: rgb(245, 238, 219);
+            display: flex;
+        }
+        .sidebar {
+            margin-right: 25px;
+            padding: 10px;
+        }
+        .sidebar-img {
+            width: 200px;
+        }
+        .content {
+            flex: 1;
+            padding: 15px;
+        }
+        #interests {
+            border: 4px silver ridge;
+            padding: 8px;
+        }
+        h2, h3 {
+            margin: 0px;
+        }
+    </style>
         <body>
             <!-- YOUR HTML TAGS GO HERE -->
             <!-- All content goes here -->
-            <div>
+            <div id-"all-contents">
+
+            </div>
+            </body>
                 <nav>
+                    <h1>Zak's Amazing Website</h1>
+                    <ul>
+                        <li>
+                            <a href-"index.html"> Home </a>
+                        </li>
+                        <li>
+                            <a href-"portfolio.html"> Portfolio </a>
+                        </li>
+                    </ul>
                     </nav>
                     <main>
                         <!-- Sidebar section -->
@@ -15,6 +89,9 @@
                             <img src= https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.xbox.com%2Fen-US%2Fconsoles%2Fall-consoles&psig=AOvVaw0lbI8gwE6ZCA4frcA5iJ5K&ust=1633547985850000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNCYxtD-s_MCFQAAAAAdAAAAABAK>
                         </div>
                         <!-- Content section -->
+                        <div>
+                            <h2> ... </h2>
+                            <p> ... </p>
                         <!-- Interests section -->
                         <div
                         <h3>Interests</h3>
@@ -24,7 +101,7 @@
                         <li>PlayingBoardGames</li>    
                         </ul>
                     </div>
-                        <div>
+                </div>
                             
                         </div>
                     </main>
