@@ -32,8 +32,14 @@ circles.push(circle);
 
 
         // TODO 3 / 8 : Call the drawCircle() function 
-
-
+var loopCompleted = 0;
+while (loopsCompleted < 10) {
+    // do something
+    loopsCompleted++
+}
+for (var loopsCompleted = 0; loopsCompleted < 10; loopsCompleted++) {
+    // do something
+}
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
         ////////////////////////////////////////////////////////////
@@ -56,7 +62,7 @@ circles.push(circle);
            game.checkCirclePosition( circlesArray[2])
            game.checkCirclePosition( circlesArray[3])
            game.checkCirclePosition( circlesArray[4])
-           
+
 
             // TODO 9 : Iterate over the array
            
