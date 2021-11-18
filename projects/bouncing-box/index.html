@@ -6,14 +6,14 @@
 	<script src="jquery.min.js"></script>
 	<style>
 		.box {
-			width: 70px;
-			height: 70px;
+			width: 200px;
+			height: 300px;
 			background-color: teal;
 			font-size: 300%;
 			text-align: center;
 			display: block;
 			position: absolute;
-			top: 100px;
+			top: 400px;
 			left: 0px;  /* <--- Change me! */
 		}
 		.board{
@@ -47,7 +47,7 @@
 			box.on('click', handleBoxClick);
 
 			// moves the Box to a new position on the screen along the X-Axis
-			function moveBoxTo(newPositionX) {
+			function moveBoxTo(boardWidth) {
 				box.css("left", newPositionX);
 			}
 
@@ -70,6 +70,8 @@
 			turn it around! 
 			*/
 			function update() {
+				moveBoxTo(positionX);
+				myVariable = myVariable + 10; 
 				
 
 			};
@@ -80,8 +82,9 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-				
-
+				positionX = 0;
+				// your code to increase the points variable by 1
+				changeBoxText(points);
 
 			};
 		})();
